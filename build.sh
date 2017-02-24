@@ -1,4 +1,4 @@
-export LOCALVERSION="-vs995.10b.reStock-1.0"
+export LOCALVERSION="-vs995.10b.reStock-1.0-kcal"
 export KBUILD_BUILD_USER=BackCheck
 export KBUILD_BUILD_HOST=nowhere
 export ARCH=arm64
