@@ -1,0 +1,11 @@
+#!/sbin/sh
+
+. "$env"
+
+cd $ramdisk
+
+sed -i -e '/^# LG RCT(Rooting Check Tool)$/,/^$/{/^\(#\|$\)/!s/^/#/}' init.lge.rc
+sed -i -e '\_^service ccmd /system/bin/ccmd$_,/^$/{/^\(#\|$\)/!s/^/#/}' init.lge.rc
+sed -i -e '/# triton service/,\_chmod 644 /sys/devices/system/cpu/triton/enable_s/^/# /' init.elsa.power.rc
+
+exit 0
