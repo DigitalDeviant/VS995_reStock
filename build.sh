@@ -1,5 +1,5 @@
 # Set the kernel version string, feel free to change this or not.
-export LOCALVERSION="-vs995.10b.reStock-1.2"
+export LOCALVERSION="-vs995.10b.reStock-1.3"
 
 # Set the kernel architecture, do not change this.
 export ARCH=arm64
