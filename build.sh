@@ -1,5 +1,5 @@
 # Set the kernel version string, feel free to change this or not.
-export LOCALVERSION="-vs995.10b.reStock-1.3"
+export LOCALVERSION="-vs995.10b.reStock-1.4"
 
 # Set the kernel architecture, do not change this.
 export ARCH=arm64
@@ -90,7 +90,7 @@ if [ "$LKF" == "$OUT" ]; then
    if "$RRC"; then
       cp "$DIR/025-rctd" "$LKF/patch.d"
    fi
-   cd "$LKF" && make
+   cd "$LKF" && make clean && make
 fi
 
 # Done.
